@@ -1,5 +1,5 @@
-{
-  "items": [{
+[
+  {
     "name": "iMac Apple IMAC 27\" 5K Core I5 3.4GHZ",
     "image": "ordinateur1.jpg",
     "desc": "Ecran LED 27\" 5K \n Processeur Intel Core i5 quadricoeur à 3,4 GHz\n Mémoire vive 8 Go - Fusion Drive 1 To \n Mac OS Sierra - Magic Keyboard - Magic Mouse 2",
@@ -250,5 +250,5 @@
     "desc": "Tapis de souris \n Adapté à toutes les souris \n Imprimé Ananas",
     "price": 4.99,
     "category": "accessoires"
-  }]
-}
+  }
+]
