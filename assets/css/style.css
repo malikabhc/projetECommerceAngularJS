@@ -1,4 +1,17 @@
+#myFooter{
+background-color: white;
+margin-right: 280px;
+margin-left: 350px;
+color: #696969;
+border: 1px solid #696969;
+font-size: 18px;
+
+}
+.Titre {
+  font-size: 20px;
+}
 .card {
+  color: grey;
   min-height: 520px;
   margin-top: 5rem;
   border:none;
