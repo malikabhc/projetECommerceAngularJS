@@ -1,7 +1,7 @@
-#footer{
+#myFooter{
 margin-right: 280px;
 margin-left: 350px;
-padding: 30px;
+
 color: #696969;
 border: 1px solid #696969;
 font-size: 15px;
@@ -9,4 +9,20 @@ font-size: 15px;
 }
 .Titre {
   font-size: 20px;
+
+.card {
+  min-height: 520px;
+  margin-top: 2rem;
+}
+img {
+  height: 300px;
+  width: auto;
+}
+p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.add-button{ /* style bouton 'ajouter au panier' */
+
 }
