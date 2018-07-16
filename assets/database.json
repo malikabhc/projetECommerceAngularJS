@@ -1,193 +1,254 @@
 {
   "items": [{
-    "name": "iMac Apple IMAC 27\" 5K CORE I5 3.4GHZ",
-    "image": "apple_imac_27.jpg",
-    "desc": "Ecran LED 27\" 5K
-    Processeur Intel Core i5 quadricoeur à 3,4 GHz
-    Mémoire vive 8 Go - Fusion Drive 1 To
-    Mac OS Sierra - Magic Keyboard - Magic Mouse 2",
-    "price": "1994.99 €",
-    "category": "Ordinateur fixe"
+    "name": "iMac Apple IMAC 27\" 5K Core I5 3.4GHZ",
+    "image": "ordinateur1.jpg",
+    "desc": "Ecran LED 27\" 5K \n Processeur Intel Core i5 quadricoeur à 3,4 GHz\n Mémoire vive 8 Go - Fusion Drive 1 To \n Mac OS Sierra - Magic Keyboard - Magic Mouse 2",
+    "price": 1994.99,
+    "category": "fixe"
   },
   {
-    "name": "iMac Apple IMAC 21.5\" 4K CORE I5 3GHZ ",
-    "image": "apple_imac_21_5.jpg",
-    "desc": "Ecran LED 21,5\" 4K
-    Processeur Intel Core i5 quadricoeur à 3 GHz
-    Mémoire vive 8 Go - Disque dur 1 To
-    Mac OS Sierra - Magic Keyboard - Magic Mouse 2",
-    "price": "1499.99 €",
-    "category": "Ordinateur fixe"
+    "name": "iMac Apple IMAC 21.5\" 4K Core I5 3GHZ",
+    "image": "ordinateur2.jpg",
+    "desc": "Ecran LED 21,5\" 4K \n Processeur Intel Core i5 quadricoeur à 3 GHz \n Mémoire vive 8 Go - Disque dur 1 To \n Mac OS Sierra - Magic Keyboard - Magic Mouse 2",
+    "price": 1499.99,
+    "category": "fixe"
   },
   {
-    "name": "Acer ACER ASPIRE AC22-720.002",
-    "image": "acer_aspire.jpg",
-    "desc": "Ecran LED 21,5\" Full HD
-    Processeur Intel® Celeron J3060
-    RAM 4 Go - 1 To HDD - Carte graphique Intel HD Graphics 405
-    Windows 10 - Webcam intégrée HD - HDMI - USB 3.0 - Bluetooth",
-    "price": "349.00 €",
-    "category": "Ordinateur fixe"
+    "name": "Asus V241ICGK-WA043T",
+    "image": "ordinateur3.jpg",
+    "desc": "Ecran LED 23,8\" Full HD \n Processeur Intel® Core™ i3-6006U \n RAM 4 Go - 1 To HDD - Carte graphique Nvidia GeForce 930MX 2 Go dédiés \n Windows 10 - Webcam intégrée - HDMI - USB 3.1",
+    "price": 599.00,
+    "category": "fixe"
   },
   {
-    "name": "b",
-    "image": "d",
-    "desc": "f",
-    "price": "e",
-    "category": "e"
+    "name": "Acer Aspire AC22-720.002",
+    "image": "ordinateur4.jpg",
+    "desc": "Ecran LED 21,5\" Full HD \n Processeur Intel® Celeron J3060 \n RAM 4 Go - 1 To HDD - Carte graphique Intel HD Graphics 405 \n Windows 10 - Webcam intégrée HD - HDMI - USB 3.0 - Bluetooth",
+    "price": 349.00,
+    "category": "fixe"
   },
   {
-    "name": "b",
-    "image": "d",
-    "desc": "f",
-    "price": "e",
-    "category": "e"
+    "name": "Acer Aspire AC20-720.005",
+    "image": "ordinateur5.jpg",
+    "desc": "Ecran LED 19,5\" HD+ \n Processeur Intel® Pentium® J3710 \n RAM 4 Go - 1 To HDD - Carte graphique Intel HD Graphics 405 \n Windows 10 - Graveur DVD - HDMI - USB 3.0 - Bluetooth",
+    "price": 349.00,
+    "category": "fixe"
   },
   {
-    "name": "b",
-    "image": "d",
-    "desc": "f",
-    "price": "e",
-    "category": "e"
+    "name": "Hp Slimline 260-P151NF",
+    "image": "ordinateur6.jpg",
+    "desc": "Processeur Intel® Core™ i5-6400T \n Carte graphique Intel HD 530 \n RAM 8 Go - 1 To SATA \n Windows 10 - Graveur DVD - HDMI - USB 3.0 - Bluetooth 4.0",
+    "price": 499.00,
+    "category": "fixe"
   },
   {
-    "name": "b",
-    "image": "d",
-    "desc": "f",
-    "price": "e",
-    "category": "e"
+    "name": "Lenovo Ideacentre 310S-08IAP 90GA005UFR",
+    "image": "ordinateur7.jpg",
+    "desc": "Processeur Intel® Celeron® J3355 \n Carte graphique Intel HD Graphics \n RAM 4 Go - 1 To HDD \n Windows 10 - Graveur DVD - HDMI - USB 3.0",
+    "price": 279.00,
+    "category": "fixe"
   },
   {
-    "name": "b",
-    "image": "d",
-    "desc": "f",
-    "price": "e",
-    "category": "e"
+    "name": "Apple MacBook Pro 13\" 128 Go Argent",
+    "image": "portable1.jpg",
+    "desc": "Ecran LED 13,3\" Retina \n Processeur Bicoeur Intel Core i5 à 2,3 GHz \n RAM 8 Go - 128 Go SSD - Carte graphique Intel Iris Plus Graphics 640 \n Caméra FaceTime HD 720p - Clavier rétro-éclairé - Trackpad Force Touch",
+    "price": 1349.99,
+    "category": "portable"
   },
   {
-    "name": "b",
-    "image": "d",
-    "desc": "f",
-    "price": "e",
-    "category": "e"
+    "name": "Apple MacBook Air 13\" 128 Go",
+    "image": "portable2.jpg",
+    "desc": "Ecran brillant LED 13,3\" rétro-éclairé, 1440 x 900 pixels \n Processeur Bicoeur Intel Core i5 \n RAM 8 Go - 128 Go SSD \n Carte graphique Intel HD Graphics 6000",
+    "price": 999.99,
+    "category": "portable"
   },
   {
-    "name": "b",
-    "image": "d",
-    "desc": "f",
-    "price": "e",
-    "category": "e"
+    "name": "Microsoft Surface Laptop 128G Core I5 4GO Platine",
+    "image": "portable3.jpg",
+    "desc": "Ecran LED tactile 13,5\" \n Processeur Intel® Core™ i5 \n RAM 4 Go - 128 Go SSD - Carte graphique Intel HD 620 \n Windows 10S - Webcam intégrée - USB 3.0 - Autonomie 14h30",
+    "price": 919.20,
+    "category": "portable"
   },
   {
-    "name": "b",
-    "image": "d",
-    "desc": "f",
-    "price": "e",
-    "category": "e"
+    "name": "Asus S410UA-EB065T",
+    "image": "portable4.jpg",
+    "desc": "Ecran LED 14\" Full HD \n Processeur Intel® Core™ i5-8250U \n RAM 6 Go - 500 Go HDD + 128 Go SSD - Carte graphique Intel HD Graphics 620 \n Windows 10 - Webcam intégrée - HDMI - USB 3.1 Type C",
+    "price": 799.00,
+    "category": "portable"
   },
   {
-    "name": "b",
-    "image": "d",
-    "desc": "f",
-    "price": "e",
-    "category": "e"
+    "name": "Acer Aspire A515-51G-37Z4",
+    "image": "portable5.jpg",
+    "desc": "Ecran LED 15,6\" HD \n Processeur Intel® Core™ i3-6006U \n RAM 4 Go - 1 To HDD - Carte graphique Nvidia GeForce 940MX 2 Go dédiés \n Windows 10 - Webcam intégrée HD - HDMI - USB 3.1 Type C",
+    "price": 499.00,
+    "category": "portable"
   },
   {
-    "name": "b",
-    "image": "d",
-    "desc": "f",
-    "price": "e",
-    "category": "e"
+    "name": "Asus Zenbook UX561UN-BO040T",
+    "image": "hybride1.jpg",
+    "desc": "Ecran LED tactile 15,6\" Full HD \n Processeur Intel® Core™ i7-8550U \n RAM 8 Go - 512 Go SSD - Carte graphique Nvidia GeForce MX150 2 Go dédiés \n Windows 10 - Webcam intégrée HD - HDMI - USB 3.1 Type C - Bluetooth 4.1",
+    "price": 1549.00,
+    "category": "hybride"
   },
   {
-    "name": "b",
-    "image": "d",
-    "desc": "f",
-    "price": "e",
-    "category": "e"
+    "name": "Microsoft Surface Go 8Go RAM 128Go",
+    "image": "hybride2.jpg",
+    "desc": "Ecran tactile 10\" PixelSense™ \n RAM 8 Go - Disque dur SSD 128 Go - Carte graphique Intel HD Graphics 615 \n Processeur Intel Pentium Gold 4415Y \n Windows 10 Home en mode S4 - 8.3 mm d'épaisseur - Poids 522g",
+    "price": 599.00,
+    "category": "hybride"
   },
   {
-    "name": "b",
-    "image": "d",
-    "desc": "f",
-    "price": "e",
-    "category": "e"
+    "name": "HP Spectre X360 13-EA020NF",
+    "image": "hybride3.jpg",
+    "desc": "Ecran WLED tactile 13,3\" Full HD \n Processeur Intel® Core™ i7-8550U \n RAM 16 Go - 256 Go SSD - Carte graphique Intel UHD 620 \n Windows 10 - Thunderbolt 3 - Clavier chiclet rétro-éclairé - Bluetooth 4.2",
+    "price": 1489.00,
+    "category": "hybride"
   },
   {
-    "name": "b",
-    "image": "d",
-    "desc": "f",
-    "price": "e",
-    "category": "e"
+    "name": "Apple iPad Pro 12.9\" WIFI 64 Go Argent",
+    "image": "tablette1.jpg",
+    "desc": "Ecran LED Retina 12,9\" - Résolution 2732 x 2048 pixels \n Capacité 64 Go - Wifi 802.11 a/b/g/n/ac + Bluetooth 4.2 \n Jusqu'à 10 h d'autonomie \n Ultra fin : 6,9 mm - Poids : 677 g",
+    "price": 909.00,
+    "category": "tablettes"
   },
   {
-    "name": "b",
-    "image": "d",
-    "desc": "f",
-    "price": "e",
-    "category": "e"
+    "name": "Samsung Galaxy Tab S3 Argent 32 Go WIFI",
+    "image": "tablette2.jpg",
+    "desc": "Ecran capacitif 9,7\" Super AMOLED QXGA \n Processeur Samsung Octo Core 2,15 GHz \n RAM 4 Go - Capacité de stockage 32 Go \n Android Nougat 7.0 - Epaisseur : 6 mm - Poids : 429 g - Stylet S Pen inclus",
+    "price": 529.00,
+    "category": "tablettes"
   },
   {
-    "name": "b",
-    "image": "d",
-    "desc": "f",
-    "price": "e",
-    "category": "e"
+    "name": "Apple iPad WIFI 128 Go Or (MRJP2NF)",
+    "image": "tablette3.jpg",
+    "desc": "Ecran LED Retina 9.7\" (24.6 cm) - Résolution 2048 x 1536 pixels \n Capacité 128 Go - Wifi 802.11 a/b/g/n/ac + Bluetooth 4.2 \n Jusqu'à 10h d'autonomie \n Ultra fin : 7,5 mm - Poids : 469 g",
+    "price": 449.99,
+    "category": "tablettes"
   },
   {
-    "name": "b",
-    "image": "d",
-    "desc": "f",
-    "price": "e",
-    "category": "e"
+    "name": "Apple iPad Mini 4 128 Go WIFI Or ",
+    "image": "tablette4.jpg",
+    "desc": "Ecran Retina LED 7,9\" (19,7 cm) - Résolution : 2048 x 1536 pixels \n Capacité de 128 Go - Wi-Fi + Bluetooth 4.2 \n Jusqu'à 10 heures d'autonomie - Capteur d'empreinte digitale Touch ID \n Ultra fin : 6,1 mm d'épaisseur - Ultra léger : 299 g",
+    "price": 439.99,
+    "category": "tablettes"
   },
   {
-    "name": "b",
-    "image": "d",
-    "desc": "f",
-    "price": "e",
-    "category": "e"
+    "name": "Asus Zenpad 3S 10 (Z500M-1J009A)",
+    "image": "tablette5.jpg",
+    "desc": "Ecran capacitif 9,7\" \n Processeur Mediatek 8176 Turbo Dual CA72 + Quad CA53 \n Mémoire vive 4 Go - Capacité de stockage 64 Go \n Android 6.0 Marshmallow - 7,1 mm d'épaisseur - Poids : 430 g",
+    "price": 329.00,
+    "category": "tablettes"
+  }
+  {
+    "name": "Huawei Mediapad M3 Lite 10 32 Go WIFI + 4G GRISE ",
+    "image": "tablette6.jpg",
+    "desc": "Ecran capacitif 10,1\" Full HD (25,65 cm) \n Processeur MSM8940 Octo-Core \n RAM 3 Go - Capacité de stockage 32 Go extensible via slot Micro SD \n Android 7.0 - 7,1 mm d'épaisseur - Poids : 460 g",
+    "price": 299.99,
+    "category": "tablettes"
   },
   {
-    "name": "b",
-    "image": "d",
-    "desc": "f",
-    "price": "e",
-    "category": "e"
+    "name": "Asus Z301M-1D008A",
+    "image": "tablette7.jpg",
+    "desc": "Ecran capacitif 10,1\" (25,65 cm) HD IPS \n Processeur Mediatek MT8163B Quad-Core \n RAM 2 Go - 16 Go eMMC \n Android 7.0 Nougat - Poids : 470 g - Epaisseur : 8,9 mm",
+    "price": 149.00,
+    "category": "tablettes"
   },
   {
-    "name": "b",
-    "image": "d",
-    "desc": "f",
-    "price": "e",
-    "category": "e"
+    "name": "Epson Perfection V600 Photo",
+    "image": "scan1.jpg",
+    "desc": "Scanner photographique 6400x9600 ppp \n Précision couleurs 48 bits \n Scanne négatifs, positifs et diapositives \n 4 boutons d'accès direct",
+    "price": 249.99,
+    "category": "imprimantes"
   },
   {
-    "name": "b",
-    "image": "d",
-    "desc": "f",
-    "price": "e",
-    "category": "e"
+    "name": "Samsung SL-C480W",
+    "image": "imprimante1.jpg",
+    "desc": "Imprimante laser couleur \n Technologies : Wifi, Wifi direct, NFC, WPS - Application Mobile Print pour imprimer directement via votre téléphone \n Compatible iOS®, Android™, Microsoft® Windows® phones et Amazon Kindle \n Economie de toner et papier avec le pilote d'impression EASY ECO",
+    "price": 199.99,
+    "category": "imprimantes"
   },
   {
-    "name": "b",
-    "image": "d",
-    "desc": "f",
-    "price": "e",
-    "category": "e"
+    "name": "Epson Perfection V-39",
+    "image": "scan2.jpg",
+    "desc": "Numérisation haute résolution de 4800 dpi \n Alimentation et connectivité via micro USB \n Socle intégré pour numérisation verticale \n Quatre boutons simples - Logiciel intelligent",
+    "price": 79.99,
+    "category": "imprimantes"
   },
   {
-    "name": "b",
-    "image": "d",
-    "desc": "f",
-    "price": "e",
-    "category": "e"
+    "name": "Canon LiDE120",
+    "image": "scan3.jpg",
+    "desc": "Résolution élevée \n Reconnaissance automatique du type de document \n Auto-alimenté par USB \n Simplicité d'utilisation grâce aux 4 touches de raccourci EZ",
+    "price": 64.99,
+    "category": "imprimantes"
   },
   {
-    "name": "b",
-    "image": "d",
-    "desc": "f",
-    "price": "e",
-    "category": "e"
+    "name": "Epson XP-442",
+    "image": "imprimante2.jpg",
+    "desc": "Imprime - Scanne- Copie \n Wifi - Wifi Direct \n Ecran couleur LCD de 6.8 cm \n Avec cartouches séparées",
+    "price": 49.99,
+    "category": "imprimantes"
+  },
+  {
+    "name": "Hp Envy 5020",
+    "image": "imprimante3.jpg",
+    "desc": "3 en 1 \n Économisez jusqu’à 70 % sur vos cartouches d’encre grâce au service HP Instant Ink \n Une connectivité sans fil qui ne vous laissera pas tomber",
+    "price": 49.99,
+    "category": "imprimantes"
+  },
+  {
+    "name": "Hp Deskjet 3639",
+    "image": "imprimante4.jpg",
+    "desc": "Imprimez depuis votre smartphone ou votre tablette \n Imprime, scanne et copie \n Économise jusqu'à 70% d'encre",
+    "price": 39.99,
+    "category": "imprimantes"
+  },
+  {
+    "name": "Apple Magic Keyboard",
+    "image": "accessoire1.jpg",
+    "desc": "Clavier sans fil avec pavé numérique (option filaire via lightning) \n Boîtier ultra-fin en aluminium \n Clavier AZERTY",
+    "price": 142.99,
+    "category": "accessoires"
+  }
+  {
+    "name": "Logitech MK330 FR",
+    "image": "accessoire2.jpg",
+    "desc": "Ensemble clavier et souris sans fil AZERTY \n Technologie sans fil RF 2,4 GHz \n Portée maximale de 10 mètres",
+    "price": 49.99,
+    "category": "accessoires"
+  },
+  {
+    "name": "HP K3010",
+    "image": "accessoire3.jpg",
+    "desc": "Compatible avec Windows 10 \n Equipé d'un pavé numerique",
+    "price": 29.99,
+    "category": "accessoires"
+  },
+  {
+    "name": "Logitech M 280 Black",
+    "image": "accessoire4.jpg",
+    "desc": "Souris sans fil optique \n Technologie sans fil 2,4 GHz \n Conception profilée confortable",
+    "price": 34.99,
+    "category": "accessoires"
+  }
+  {
+    "name": "Hp Z3200 Silver",
+    "image": "accessoire5.jpg",
+    "desc": "Souris sans fil à faisceau lumineux bleu et optique de haute précision \n Fonctionne sur pratiquement toutes les surfaces \n Format compact et léger \n Technologie Plug and Play",
+    "price": 24.99,
+    "category": "accessoires"
+  },
+  {
+    "name": "Apple Magic Mouse 2 (MLA02Z/A)",
+    "image": "accessoire6.jpg",
+    "desc": "Souris sans fil Bluetooth avec technologie Multi-Touch \n Nouveau design, plus légère et plus facile à prendre en main \n Rechargeable \n Câble Lightning vers USB inclu",
+    "price": 84.99,
+    "category": "accessoires"
+  },
+  {
+    "name": "Tapis de souris MP-501 imprimé ananas",
+    "image": "accessoire7.jpg",
+    "desc": "Tapis de souris \n Adapté à toutes les souris \n Imprimé Ananas",
+    "price": 4.99,
+    "category": "accessoires"
   }]
 }
