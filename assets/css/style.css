@@ -1,11 +1,18 @@
+#arrow{
+font-size: 50px;
+color:grey;
+margin-left: 49%;
+}
 #myFooter{
 background-color: white;
-margin-right: 280px;
-margin-left: 350px;
+margin-right: 290px;
+margin-left: 340px;
 color: #696969;
 border: 1px solid #696969;
 font-size: 18px;
-
+}
+.navbar{
+  font-family: 'Bitter', serif;
 }
 .Titre {
   font-size: 20px;
