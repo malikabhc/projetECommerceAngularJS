@@ -25,12 +25,15 @@ p {
   overflow: hidden;
   text-overflow: ellipsis;
   font-family: 'Signika', sans-serif;
+  color: black;
 }
 .add-button{ /* style bouton 'ajouter au panier' */
   font-family: 'Signika', sans-serif;
+  color: black;
 }
 .navbar, h4{
   font-family: 'Handlee', cursive;
   font-size: 17px;
   font-weight: bold;
+  color: black;
 }
