@@ -1,13 +1,16 @@
 var myShop = angular.module('shop', []);
 
-myShop.run(function ($rootScope) {
+myShop.run(['$rootScope', '$http', function ($rootScope, $http) {
   $rootScope.quantity = {};
-  $rootScope.items = [];
-});
-
-myShop.controller('myContent', ['$scope', '$http', function ($scope, $http) {
-
+  $http.get('assets/database.json').then(function (response){
+    $rootScope.items = response.data;
+    console.log($rootScope.items);
+  });
 }]);
+
+myShop.controller('myContent', ['$rootScope', '$scope', function ($rootScope, $scope) {
+}]);
+
 myShop.controller('myCart', ['$scope', function($scope){
 
 }]);
