@@ -1,5 +1,5 @@
 [
-  "items": [{
+  {
     "name": "iMac Apple IMAC 27\" 5K CORE I5 3.4GHZ",
     "image": "apple_imac_27.jpg",
     "desc": "Ecran LED 27\" 5K Processeur Intel Core i5 quadricoeur à 3,4 GHz Mémoire vive 8 Go - Fusion Drive 1 To Mac OS Sierra - Magic Keyboard - Magic Mouse 2",
@@ -180,5 +180,5 @@
     "desc": "f",
     "price": "e",
     "category": "e"
-  }]
+  }
 ]

@@ -1,0 +1,16 @@
+.card {
+  min-height: 520px;
+  margin-top: 2rem;
+}
+img {
+  height: 300px;
+  width: auto;
+}
+p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.add-button{ /* style bouton 'ajouter au panier' */
+
+}
