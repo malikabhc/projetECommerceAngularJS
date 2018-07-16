@@ -3,21 +3,21 @@
     "name": "iMac Apple IMAC 27\" 5K CORE I5 3.4GHZ",
     "image": "apple_imac_27.jpg",
     "desc": "Ecran LED 27\" 5K Processeur Intel Core i5 quadricoeur à 3,4 GHz Mémoire vive 8 Go - Fusion Drive 1 To Mac OS Sierra - Magic Keyboard - Magic Mouse 2",
-    "price": "1994.99 €",
+    "price": 1994.99,
     "category": "Ordinateur fixe"
   },
   {
     "name": "iMac Apple IMAC 21.5\" 4K CORE I5 3GHZ ",
     "image": "apple_imac_21_5.jpg",
     "desc": "Ecran LED 21,5\" 4K\n Processeur Intel Core i5 quadricoeur à 3 GHz\n Mémoire vive 8 Go - Disque dur 1 To\n Mac OS Sierra - Magic Keyboard - Magic Mouse 2",
-    "price": "1499.99 €",
+    "price": 1499.99,
     "category": "Ordinateur fixe"
   },
   {
     "name": "Acer ACER ASPIRE AC22-720.002",
     "image": "acer_aspire.jpg",
     "desc": "Ecran LED 21,5\" Full HD\n Processeur Intel® Celeron J3060\n RAM 4 Go - 1 To HDD - Carte graphique Intel HD Graphics 405\n Windows 10 - Webcam intégrée HD - HDMI - USB 3.0 - Bluetooth",
-    "price": "349.00 €",
+    "price": 349.00,
     "category": "Ordinateur fixe"
   },
   {

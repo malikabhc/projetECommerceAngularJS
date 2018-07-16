@@ -10,7 +10,6 @@ myShop.run(function ($rootScope, $http) {
 
 myShop.controller('myContent', ['$scope', function ($scope) {
   $scope.addToBasket = function(index) {
-    console.log($scope.qantity);
     if(!(index in $scope.qantity)){
       $scope.qantity[index] = 1;
     } else {
@@ -20,5 +19,16 @@ myShop.controller('myContent', ['$scope', function ($scope) {
 }]);
 
 myShop.controller('myCart', ['$scope', function($scope){
+  $scope.erase = function(index){
+    delete $scope.qantity[index];
+  };
+  $scope.qantityChange = function(index, val){
+    if($scope.qantity[index] <= 1)
+    {
+      return;
+    }
+
+    $scope.qantity[index] += val;
+  };
 
 }]);
