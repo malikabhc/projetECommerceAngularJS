@@ -17,10 +17,11 @@ font-size: 18px;
   border:none;
 }
 img {
-  height: 300px;
-  width: auto;
+  max-height: 300px;
+  max-width: 300px;
+  align-self: center;
 }
-p {
+p, h4 {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -36,4 +37,11 @@ p {
   font-size: 17px;
   font-weight: bold;
   color: black;
+}
+.toggle-button{
+  background-image: url('../img/desktop-solid.svg');
+  width: 50px !important;
+  height: 50px !important;
+  background-repeat:round;
+  background-position: center;
 }
