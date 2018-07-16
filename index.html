@@ -6,51 +6,66 @@
   <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Caveat|Handlee|Signika" rel="stylesheet">
   <script src="assets/js/jquery.min.js"></script>
   <script src="assets/js/bootstrap.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
   <script src="assets/js/script.js"></script>
   <title></title>
 </head>
-<body ng-app="shop">
+<body ng-app="shop" ng-controller="myContent">
   <nav class="navbar navbar-expand-sm bg-color-7 fixed-top">
-    <a class="navbar-brand" href="#" id="logo"></a>
     <button class="navbar-toggler toggle-button" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"></button>
-    <a class="nav-link d-block d-sm-block d-md-none d-lg-none d-xl-none showModalWindow" data-toggle="modal" href="#myModal"><span class="fas fa-shopping-basket"></span> 0.00€ (0)</a>
-    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <a class="nav-link d-block d-sm-block d-md-none d-lg-none d-xl-none showModalWindow" data-toggle="modal" href="#myModal"><span class="fas fa-shopping-basket"></span> Mon Panier : {{ total | number : 2   }}€ ({{totalQantity}})</a>
+    <div class="collapse navbar-collapse navbar-light bg-light fixed-top" id="collapsibleNavbar">
+      <a class="navbar-brand" href="#">Nom du site</a>
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" id="all">Tous</a>
+          <a class="nav-link" ng-click = "changeFilter('fixe')">Ordinateur fixe</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" id="bathCarpet">Bain</a>
+          <a class="nav-link" ng-click = "changeFilter('portable')">Ordinateur Portable</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" id="livingRoomCarpet">Salon</a>
+          <a class="nav-link" ng-click = "changeFilter('hybride')">PC Hybrides</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" ng-click = "changeFilter('tablettes')">Tablettes tactiles</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" ng-click = "changeFilter('imprimantes')">Imprimante & scanner</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" ng-click = "changeFilter('accessoires')">Accessoires</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" ng-click = "changeFilter('')">Afficher tous les articles</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
         <li class="nav-item">
           <a class="nav-link d-none d-sm-none d-md-block d-lg-block d-xl-block showModalWindow" data-toggle="modal" href="#myModal">
-            <span class="fas fa-shopping-basket"></span> 0.00€ (0)</a>
+            <span class="fas fa-shopping-basket"></span> Mon Panier :{{ total | number : 2  }}€ ({{totalQantity}})</a>
           </li>
         </ul>
       </div>
     </nav>
-    <div class="container-fluid" ng-controller="myContent">
+    <div class="container-fluid">
       <div class="row">
-        <div class="col-lg-3 col-md-6 col-12" ng-repeat="volume in items track by $index">
+        <div class="col-lg-3 col-md-6 col-12" ng-repeat="(id,element) in items | filter:{category : itemsCategories}">
           <div class="card w-100">
-            <img class="card-img-top mt-3" src="assets/img/{{ volume.image }}" alt="{{ volume.name }}">
+            <img class="card-img-top mt-3" src="assets/img/{{ element.image }}" alt="{{ volume.name }}">
             <div class="card-body">
-              <h4 class="card-title" title="{{ volume.name }}">{{ volume.name }}</h4>
-              <p class="card-text" data-toggle="tooltip" data-placement="bottom" title="{{ volume.desc }}">{{ volume.desc }}</p>
-              <p>Prix: {{ volume.price }}€</p>
-              <a class="btn add-button" ng-click="addToBasket($index)">Ajouter au panier</a>
+              <h4 class="card-title">{{ element.name }}</h4>
+              <p class="card-text" data-toggle="tooltip" data-placement="bottom" title="{{ element.desc }}">{{ element.desc }}</p>
+              <p>Prix: {{ element.price | number : 2 }}€</p>
+              <a class="btn add-button" ng-click="addToBasket(id)">Ajouter au panier</a>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="" ng-controller="myCart">
+    <div>
       <div class="modal fade" id="myModal">
         <div class="modal-dialog">
           <div class="modal-content">
@@ -65,21 +80,21 @@
                 <div class="modal-body">
                   <div class="container-fluid modalBody m-0 p-0">
                     <div class="row">
-                      <div class="column" ng-repeat = "(id,volume) in qantity track by $index">
+                      <div class="column" ng-repeat = "(id, volume) in qantities track by $index">
                         <div class="my-0 row shoppingCardContent">
-                          <div class="pt-1 col-6"><p>nom : {{items[$index].name }}</p></div>
-                          <div class="col-6"><p>prix : {{ items[$index].price }}€</p></div>
-                          <div class="col-12"><p> total : {{ items[$index].price * volume }}€</p>
+                          <div class="pt-1 col-6"><p>nom : {{items[id].name }}</p></div>
+                          <div class="col-6"><p>prix : {{ items[id].price | number : 2 }}€</p></div>
+                          <div class="col-12"><p>total : {{ items[id].price * volume | number : 2 }}€</p>
                             <label>quantité : </label>
                             <div class="row">
                               <div class="col-4">
-                                <button class="btn bg-color-6" ng-click="qantityChange($index, 1)">+</button>
+                                <button class="btn bg-color-6" ng-click="qantityChange(id, 1)">+</button>
                               </div>
                               <div class="col-4">
                                 <p>{{ volume }}</p>
                               </div>
                               <div class="col-4">
-                                <button class="btn bg-color-6" ng-click="qantityChange($index, -1)">-</button>
+                                <button class="btn bg-color-6" ng-click="qantityChange(id, -1)">-</button>
                               </div>
                             </div>
                           </div>
@@ -93,16 +108,54 @@
                 </div>
               </div>
             </div>
-
             <!-- Modal footer -->
             <div class="modal-footer w-100">
               <div class="modalFooter">
-
+                <div class="col-12"><p>total : {{ total | number : 2 }}€</p>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <div class="container-flex">
+      <div class="row" id="myFooter">
+            <div class="col-md-3">
+              <h5 class="Titre">Catalogue :</h5>
+              <ul>
+                <li><a href="file:///home/kevin/Documents/projetECommerceAngularJS/index.html">Ordinateur</a></li>
+                <li><a href="file:///home/kevin/Documents/projetECommerceAngularJS/index.html">Tablettes</a></li>
+                <li><a href="file:///home/kevin/Documents/projetECommerceAngularJS/index.html">Accessoires</a></li>
+              </ul>
+            </div>
+              <div class="col-md-3">
+              <h5 class="Titre">Contact :</h5>
+              <ul>
+                <li><a href="file:///home/kevin/Documents/projetECommerceAngularJS/index.html">Contactez-nous</a></li>
+                <li><a href="file:///home/kevin/Documents/projetECommerceAngularJS/index.html">Le SAV</a></li>
+                <li><a href="file:///home/kevin/Documents/projetECommerceAngularJS/index.html">Remboursement</a></li>
+              </ul>
+           </div>
+            <div class="col-md-3">
+              <h5 class="Titre"> Une question ? :</h5>
+              <ul>
+                <li><a href="file:///home/kevin/Documents/projetECommerceAngularJS/index.html">Nos dépliants</a></li>
+                <li><a href="file:///home/kevin/Documents/projetECommerceAngularJS/index.html">Les conseils</a></li>
+                <li><a href="file:///home/kevin/Documents/projetECommerceAngularJS/index.html">Proposition</a></li>
+              </ul>
+            </div>
+            <div class="col-md-2">
+              <select class="tdrl custom-select relative" name="Langues">
+                <optgroup label="Selectionnez votre langue">
+                  <option value="Francais">Français</option>
+                  <option value="Anglais">Anglais</option>
+                  <option value="Allemand">Allemand</option>
+                </optgroup>
+              </select>
+            </div>
+
+        </div>
+      </div>
+
   </body>
-  </html>
+</html>
