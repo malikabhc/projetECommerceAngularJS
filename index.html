@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="assets/css/style.css" />
   <script src="assets/js/jquery.min.js"></script>
   <script src="assets/js/bootstrap.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
   <script src="assets/js/script.js"></script>
   <title></title>
 </head>
@@ -32,88 +32,116 @@
         <li class="nav-item">
           <a class="nav-link d-none d-sm-none d-md-block d-lg-block d-xl-block showModalWindow" data-toggle="modal" href="#myModal">
             <span class="fas fa-shopping-basket"></span> Mon Panier : 0.00€ (0)</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-  <div class="container-fluid" ng-controller="myContent">
-    <div class="row">
-      <div class="col-lg-3 col-md-6 col-12" ng-repeat="e in items track by $index">
-        <div class="card w-100">
-          <img class="card-img-top mt-3" src="assets/img/{{ e.image }}" alt="{{ e.name }}">
-          <div class="card-body">
-            <h4 class="card-title">{{ e.name }}</h4>
-            <p class="card-text" data-toggle="tooltip" data-placement="bottom" title="{{ e.desc }}">{{ e.desc }}</p>
-            <p>Prix: {{ e.price }}€</p>
-            <a class="btn add-button" ng-click="addToBasket($index)">Ajouter au panier</a>
-          </div>
-        </div>
+          </li>
+        </ul>
       </div>
-    </div>
-  </div>
-  <div class="" ng-controller="myCart">
-    <div class="modal fade" id="myModal">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <!-- Modal Header -->
-          <div class="modal-header bg-color-7" >
-            <h4 class="modal-title">Mon panier</h4>
-            <button type="button2" class="close" data-dismiss="modal">&times;</button>
-          </div>
-          <!-- Modal body -->
-          <div class="modal-body">
-            <div class="container-fluid modalBody m-0 p-0">
-
-            </div>
-          </div>
-
-          <!-- Modal footer -->
-          <div class="modal-footer w-100">
-            <div class="modalFooter">
-
+    </nav>
+    <div class="container-fluid" ng-controller="myContent">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 col-12" ng-repeat="element in items track by $index">
+          <div class="card w-100">
+            <img class="card-img-top mt-3" src="assets/img/{{ element.image }}" alt="{{ element.name }}">
+            <div class="card-body">
+              <h4 class="card-title">{{ element.name }}</h4>
+              <p class="card-text" data-toggle="tooltip" data-placement="bottom" title="{{ element.desc }}">{{ element.desc }}</p>
+              <p>Prix: {{ element.price }}€</p>
+              <a class="btn add-button" ng-click="addToBasket($index)">Ajouter au panier</a>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="container-fluid">
-    <div class="row" id="myFooter">
-          <div class="col-md-2">
-            <h5 class="Titre">Catalogue :</h5>
-            <ul>
-              <li><a href="file:///home/kevin/Documents/projetECommerceAngularJS/index.html">Ordinateur</a></li>
-              <li><a href="file:///home/kevin/Documents/projetECommerceAngularJS/index.html">Tablettes</a></li>
-              <li><a href="file:///home/kevin/Documents/projetECommerceAngularJS/index.html">Accessoires</a></li>
-            </ul>
+    <div class="" ng-controller="myCart">
+      <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header bg-color-7" >
+              <h4 class="modal-title">Mon panier</h4>
+              <button type="button2" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <!-- Modal body -->
+            <div class="modal-body">
+              <div class="container-fluid modalBody m-0 p-0">
+                <div class="modal-body">
+                  <div class="container-fluid modalBody m-0 p-0">
+                    <div class="row">
+                      <div class="column" ng-repeat = "element in qantity track by $index">
+                        <div class="my-0 row shoppingCardContent">
+                          <div class="pt-1 col-6"><p>nom : {{items[$index].name }}</p></div>
+                          <div class="col-6"><p>prix : {{ items[$index].price }}€</p></div>
+                          <div class="col-12">
+                            <label>quantité : </label>
+                            <div class="row">
+                              <div class="col-4">
+                                <button class="btn bg-color-6" ng-click="qantityChange($index, 1)">+</button>
+                              </div>
+                              <div class="col-4">
+                                <p>{{ element }}</p>
+                              </div>
+                              <div class="col-4">
+                                <button class="btn bg-color-6" ng-click="qantityChange($index, -1)">-</button>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="pb-2 col-12">
+                            <button class="w-100 btn bg-color-6" ng-click="erase($index)">Supprimer</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Modal footer -->
+            <div class="modal-footer w-100">
+              <div class="modalFooter">
+
+              </div>
+            </div>
           </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-flex">
+      <div class="row" id="myFooter">
+            <div class="col-md-3">
+              <h5 class="Titre">Catalogue :</h5>
+              <ul>
+                <li><a href="file:///home/kevin/Documents/projetECommerceAngularJS/index.html">Ordinateur</a></li>
+                <li><a href="file:///home/kevin/Documents/projetECommerceAngularJS/index.html">Tablettes</a></li>
+                <li><a href="file:///home/kevin/Documents/projetECommerceAngularJS/index.html">Accessoires</a></li>
+              </ul>
+            </div>
+              <div class="col-md-3">
+              <h5 class="Titre">Contact :</h5>
+              <ul>
+                <li><a href="file:///home/kevin/Documents/projetECommerceAngularJS/index.html">Contactez-nous</a></li>
+                <li><a href="file:///home/kevin/Documents/projetECommerceAngularJS/index.html">Le SAV</a></li>
+                <li><a href="file:///home/kevin/Documents/projetECommerceAngularJS/index.html">Remboursement</a></li>
+              </ul>
+           </div>
+            <div class="col-md-3">
+              <h5 class="Titre"> Une question ? :</h5>
+              <ul>
+                <li><a href="file:///home/kevin/Documents/projetECommerceAngularJS/index.html">Nos dépliants</a></li>
+                <li><a href="file:///home/kevin/Documents/projetECommerceAngularJS/index.html">Les conseils</a></li>
+                <li><a href="file:///home/kevin/Documents/projetECommerceAngularJS/index.html">Proposition</a></li>
+              </ul>
+            </div>
             <div class="col-md-2">
-            <h5 class="Titre">Contact :</h5>
-            <ul>
-              <li><a href="file:///home/kevin/Documents/projetECommerceAngularJS/index.html">Contactez-nous</a></li>
-              <li><a href="file:///home/kevin/Documents/projetECommerceAngularJS/index.html">Le SAV</a></li>
-              <li><a href="file:///home/kevin/Documents/projetECommerceAngularJS/index.html">Remboursement</a></li>
-            </ul>
-         </div>
-          <div class="col-md-2">
-            <h5 class="Titre"> Une question ? :</h5>
-            <ul>
-              <li><a href="file:///home/kevin/Documents/projetECommerceAngularJS/index.html">Nos dépliants</a></li>
-              <li><a href="file:///home/kevin/Documents/projetECommerceAngularJS/index.html">Les conseils</a></li>
-              <li><a href="file:///home/kevin/Documents/projetECommerceAngularJS/index.html">Proposition</a></li>
-            </ul>
-          </div>
-          <div class="col-md-2">
-            <select class="tdrl custom-select relative" name="Langues">
-              <optgroup label="Selectionnez votre langue">
-                <option value="Francais">francais</option>
-                <option value="Anglais">anglais</option>
-                <option value="Allemand">allemand</option>
-              </optgroup>
-            </select>
-          </div>
+              <select class="tdrl custom-select relative" name="Langues">
+                <optgroup label="Selectionnez votre langue">
+                  <option value="Francais">Français</option>
+                  <option value="Anglais">Anglais</option>
+                  <option value="Allemand">Allemand</option>
+                </optgroup>
+              </select>
+            </div>
 
+        </div>
       </div>
-    </div>
-</body>
-</html>
+
+  </body>
+  </html>
