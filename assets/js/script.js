@@ -47,7 +47,8 @@ myShop.controller('myContent', ['$scope', function ($scope) {
     $scope.totalQantity += $scope.qantities[key];
     }
   };
-  $scope.changeFilter = function(newFilter){
+  $scope.changeFilter = function(newFilter, $event){
       $scope.itemsCategories = newFilter;
+      console.log($event.target);
   }
 }]);
