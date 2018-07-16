@@ -23,7 +23,7 @@ myShop.controller('myCart', ['$scope', function($scope){
     delete $scope.qantity[index];
   };
   $scope.qantityChange = function(index, val){
-    if($scope.qantity[index] <= 1)
+    if($scope.qantity[index] + val <= 0)
     {
       return;
     }

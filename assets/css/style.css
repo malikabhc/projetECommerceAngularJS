@@ -3,14 +3,22 @@
   margin-top: 2rem;
 }
 img {
-  height: 300px;
-  width: auto;
+  max-height: 300px;
+  max-width: 300px;
+  align-self: center;
 }
-p {
+p, h4 {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 .add-button{ /* style bouton 'ajouter au panier' */
 
+}
+.toggle-button{
+  background-image: url('../img/desktop-solid.svg');
+  width: 50px !important;
+  height: 50px !important;
+  background-repeat:round;
+  background-position: center;
 }
