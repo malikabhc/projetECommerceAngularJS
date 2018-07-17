@@ -44,11 +44,18 @@ myShop.controller('myContent', ['$scope', function ($scope) {
   $scope.totalQantityCalc = function(){
     $scope.totalQantity = 0;
     for (var key in $scope.qantities) {
-    $scope.totalQantity += $scope.qantities[key];
+      $scope.totalQantity += $scope.qantities[key];
     }
   };
-  $scope.changeFilter = function(newFilter, $event){
-      $scope.itemsCategories = newFilter;
-      console.log($event.target);
+  $scope.changeFilter = function(newFilter){
+    $scope.itemsCategories = newFilter;
   }
 }]);
+
+
+$(function(){
+  $('#mainNavbar li .nav-cat').click(function(){
+    $('#mainNavbar').find('.active').removeClass('active');
+    $(this).parent().addClass('active');
+  });
+});
