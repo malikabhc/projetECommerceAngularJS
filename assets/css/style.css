@@ -1,42 +1,53 @@
 #myFooter{
-background-color: white;
-margin-right: 280px;
-margin-left: 350px;
-color: #696969;
-border: 1px solid #696969;
-font-size: 18px;
-
+  font-family: 'Signika', sans-serif;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  background-color: white;
 }
-.Titre {
+.copyright{
+  padding-top: 30px;
+}
+.titre{
   font-size: 20px;
 }
-.card {
-  color: grey;
+.card{
   min-height: 520px;
-  margin-top: 5rem;
-  border:none;
+  margin-top: 4rem;
+  box-shadow: 0.3em 0.3em 0.3em 0.3em #293241;
 }
-img {
+img{
   max-height: 300px;
   max-width: 300px;
   align-self: center;
 }
-p, h4 {
+p{
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   font-family: 'Signika', sans-serif;
   color: black;
+  font-size: 1.1em;
 }
-.add-button{ /* style bouton 'ajouter au panier' */
+h4{
   font-family: 'Signika', sans-serif;
   color: black;
 }
+.add-button{ /* style bouton 'ajouter au panier' */
+  font-family: 'Signika', sans-serif;
+  border : 2px solid #003249;
+  font-size: 1.1em;
+  display: block;
+  margin: auto;
+}
 .navbar, h4{
   font-family: 'Handlee', cursive;
-  font-size: 17px;
+  font-size: 1.2em;
   font-weight: bold;
   color: black;
+}
+.navbar-brand{
+  font-family: 'Handlee', cursive;
+  font-size: 1.4em;
 }
 .toggle-button{
   background-image: url('../img/desktop-solid.svg');
@@ -44,4 +55,10 @@ p, h4 {
   height: 50px !important;
   background-repeat:round;
   background-position: center;
+}
+body{
+  background-color: #003249;
+}
+.container-fluid{
+  padding-top: 2em;
 }
