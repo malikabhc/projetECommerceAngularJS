@@ -1,5 +1,5 @@
 // Définition du Module Angularjs
-var myShop = angular.module('shop', []);
+var myShop = angular.module('shop', ['ngRoute']);
 // Definition du run qui s'executera une fois au demarrage de la page
 myShop.run(function ($rootScope, $http) {
   // Definition des rootScope qui seront utilisées dans les controller
@@ -11,7 +11,11 @@ myShop.run(function ($rootScope, $http) {
   $http.get('assets/database.json').then(function (response) {
     $rootScope.items = response.data;
   });
-
+});
+myShop.config(function($routeProvider){
+  $routeProvider.when('/home', { templateUrl : 'assets/views/home.html', controller : 'myContent'});
+  $routeProvider.when('/info/:id', { templateUrl : 'assets/views/info.html', controller : 'infoController'});
+  $routeProvider.otherwise({ redirectTo : '/home'});
 });
 // Definition du controller qui va contenir les différentes fonctions du panier et des éléments
 myShop.controller('myContent', ['$scope', function ($scope) {
@@ -56,6 +60,9 @@ myShop.controller('myContent', ['$scope', function ($scope) {
     }
   };
   $scope.changeFilter = function(newFilter){
-      $scope.itemsCategories = newFilter;
+    $scope.itemsCategories = newFilter;
   }
+}]);
+myShop.controller('infoController', ['$scope', '$routeParams', function ($scope, $routeParams){
+  $scope.id = $routeParams.id;
 }]);

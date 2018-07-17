@@ -1,8 +1,21 @@
+#arrow{
+margin-top: 20px;
+font-size: 50px;
+color:white;
+margin-left: 49%;
+}
 #myFooter{
   font-family: 'Signika', sans-serif;
   padding-top: 40px;
   padding-bottom: 20px;
   background-color: white;
+  margin-left: 0;
+  margin-right: 0;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+.content{
+  min-height: calc(100vh - 25vh) !important;
 }
 .copyright{
   padding-top: 30px;
@@ -11,12 +24,11 @@
   font-size: 20px;
 }
 .card{
-  min-height: 520px;
-  margin-top: 4rem;
+  min-height: 380px;
   box-shadow: 0.3em 0.3em 0.3em 0.3em #293241;
 }
 img{
-  max-height: 300px;
+  height: 170px;
   max-width: 300px;
   align-self: center;
 }
@@ -29,6 +41,9 @@ p{
   font-size: 1.1em;
 }
 h4{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   font-family: 'Signika', sans-serif;
   color: black;
 }
@@ -48,6 +63,7 @@ h4{
 .navbar-brand{
   font-family: 'Handlee', cursive;
   font-size: 1.4em;
+  padding-left: 1rem;
 }
 .toggle-button{
   background-image: url('../img/desktop-solid.svg');
@@ -66,5 +82,7 @@ body{
   white-space: normal;
   overflow:auto;
   text-overflow: clip;
-  
+}
+  .navbar{
+    padding: 0;
 }
