@@ -14,6 +14,9 @@ color:white;
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
 }
+.content{
+  min-height: calc(100vh - 25vh) !important;
+}
 .copyright{
   padding-top: 30px;
 }
@@ -22,7 +25,6 @@ color:white;
 }
 .card{
   min-height: 380px;
-  margin-top: 4rem;
   box-shadow: 0.3em 0.3em 0.3em 0.3em #293241;
 }
 img{
@@ -52,6 +54,10 @@ h4{
   display: block;
   margin: auto;
 }
+.add-button:hover{
+  background-color : #44a1a0;
+  transition: all 0.5s ease;
+}
 .navbar, h4{
   font-family: 'Handlee', cursive;
   font-size: 1.2em;
@@ -77,6 +83,11 @@ body{
 .container-fluid{
   padding-top: 2em;
 }
-.navbar{
-  padding: 0;
+.more{
+  white-space: normal;
+  overflow:auto;
+  text-overflow: clip;
+}
+  .navbar{
+    padding: 0;
 }

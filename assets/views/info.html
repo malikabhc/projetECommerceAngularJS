@@ -1,0 +1,20 @@
+  <nav id="mainNavbar" class="navbar navbar-light bg-light navbar-expand-sm bg-color-7 fixed-top">
+    <button class="navbar-toggler toggle-button" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"></button>
+    <a class="nav-link d-block d-sm-block d-md-none d-lg-none d-xl-none showModalWindow" data-toggle="modal" href="#myModal"><span class="fas fa-shopping-basket"></span> {{ total | number : 2   }}€ ({{totalQantity}})</a>
+    <div class="collapse navbar-light bg-light navbar-collapse" id="collapsibleNavbar">
+      <a class="navbar-brand" href="#!/home" ><i class="fas fa-arrow-left"></i> Medi'Art</a>
+    </div>
+  </nav>
+  <div class="card w-100 pt-0 mt-4">
+    <img class="card-img-top mt-3" src="assets/img/{{ items[id].image }}" alt="{{ items[id].name }}">
+    <div class="card-body">
+      <h4 class="card-title more">{{ items[id].name }}</h4>
+      <div class="row">
+        <div class="col-11">
+          <p class="card-text more"  data-toggle="tooltip" data-placement="bottom" title="{{ items[id].desc }}">{{ items[id].desc }}</p>
+        </div>
+      </div>
+      <p>Prix: {{ items[id].price | number : 2 }}€</p>
+      <a class="btn add-button" ng-click="addToBasket(id)">Ajouter au panier</a>
+    </div>
+  </div>
