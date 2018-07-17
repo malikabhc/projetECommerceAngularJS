@@ -20,7 +20,8 @@ font-size: 18px;
 .card {
   color: grey;
   min-height: 520px;
-  margin-top: 2rem;
+  margin-top: 5rem;
+  border:none;
 }
 img {
   height: 300px;
@@ -30,7 +31,13 @@ p {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  font-family: 'Signika', sans-serif;
 }
 .add-button{ /* style bouton 'ajouter au panier' */
-
+  font-family: 'Signika', sans-serif;
+}
+.navbar, h4{
+  font-family: 'Handlee', cursive;
+  font-size: 17px;
+  font-weight: bold;
 }
