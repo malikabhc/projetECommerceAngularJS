@@ -5,25 +5,25 @@
     <a class="navbar-brand" href="#" ng-click = "changeFilter('')">Medi'Art</a>
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-cat nav-link" ng-click = "changeFilter('fixe')">Ordinateur fixe</a>
+        <a class="nav-link" ng-click = "changeFilter('fixe')" onclick="navbarClick(this)">Ordinateur fixe</a>
       </li>
       <li class="nav-item">
-        <a class="nav-cat nav-link" ng-click = "changeFilter('portable')">Ordinateur Portable</a>
+        <a class="nav-link" ng-click = "changeFilter('portable')"  onclick="navbarClick(this)">Ordinateur Portable</a>
       </li>
       <li class="nav-item">
-        <a class="nav-cat nav-link" ng-click = "changeFilter('hybride')">PC Hybrides</a>
+        <a class="nav-link" ng-click = "changeFilter('hybride')"  onclick="navbarClick(this)">PC Hybrides</a>
       </li>
       <li class="nav-item">
-        <a class="nav-cat nav-link" ng-click = "changeFilter('tablettes')">Tablettes tactiles</a>
+        <a class="nav-link" ng-click = "changeFilter('tablettes')"  onclick="navbarClick(this)">Tablettes tactiles</a>
       </li>
       <li class="nav-item ">
-        <a class="nav-cat nav-link" ng-click = "changeFilter('imprimantes')">Imprimante & scanner</a>
+        <a class="nav-link" ng-click = "changeFilter('imprimantes')"  onclick="navbarClick(this)">Imprimante & scanner</a>
       </li>
       <li class="nav-item">
-        <a class="nav-cat nav-link" ng-click = "changeFilter('accessoires')">Accessoires</a>
+        <a class="nav-link" ng-click = "changeFilter('accessoires')"  onclick="navbarClick(this)">Accessoires</a>
       </li>
       <li class="nav-item active">
-        <a class="nav-cat nav-link" ng-click = "changeFilter('')">Tous les articles</a>
+        <a class="nav-link" ng-click = "changeFilter('')"  onclick="navbarClick(this)">Tous les articles</a>
       </li>
     </ul>
     <ul class="navbar-nav ml-auto">
@@ -35,7 +35,7 @@
     </div>
 </nav>
   <div class="container-fluid w-75">
-    <div class="row">
+    <div class="row mt-5">
       <div class="col-lg-3 col-md-6 col-12" ng-repeat="(id,element) in items | filter:{category : itemsCategories}">
         <div class="card w-100 pt-0 mt-4">
           <img class="card-img-top mt-3" src="assets/img/{{ element.image }}" alt="{{ element.name }}">
