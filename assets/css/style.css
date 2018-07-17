@@ -2,9 +2,9 @@
 margin-top: 20px;
 font-size: 50px;
 color:white;
-margin-left: 49%;
 }
 #myFooter{
+  text-align: left;
   font-family: 'Signika', sans-serif;
   padding-top: 40px;
   padding-bottom: 20px;
@@ -72,6 +72,7 @@ h4{
 }
 body{
   background-color: #003249;
+  text-align: center;
 }
 .container-fluid{
   padding-top: 2em;
