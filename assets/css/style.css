@@ -87,6 +87,21 @@ body{
   overflow:auto;
   text-overflow: clip;
 }
-  .navbar{
-    padding: 0;
+.navbar{
+  padding: 0;
+}
+.banniere{
+  background-image: url('../img/banniere.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 350px;
+  margin-top: 40px;
+  margin-bottom: 150px;
+  border-radius: 5px;
+}
+header{
+  height : 150px;
+}
+#card{
+  margin-top: 200px;
 }
