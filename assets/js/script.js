@@ -54,6 +54,9 @@ myShop.controller('myContent', ['$scope', function ($scope) {
   $scope.changeFilter = function(newFilter){
     $scope.itemsCategories = newFilter;
   }
+  $scope.showModal = function(){
+    $('#myModal').modal('show');
+  }
 }]);
 myShop.controller('infoController', ['$scope', '$routeParams', function ($scope, $routeParams){
   $scope.id = $routeParams.id;
